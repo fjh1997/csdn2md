@@ -26,9 +26,9 @@ from bs4 import BeautifulSoup
 logging.basicConfig(format='%(asctime)s %(levelname)s: %(message)s',
                     level=logging.INFO,
                     datefmt='%Y-%m-%d %H:%M:%S')
-# CSDN 固定的签名常量
-APP_KEY = "203803574"
-APP_SECRET = "9znpamsyl2c7cdrr9sas0le9vbc3r6ba"
+# CSDN 固定的签名常量，抓包得到
+APP_KEY = ""
+APP_SECRET = ""
 
 def get_csdn_headers(method, url, params=None):
     """

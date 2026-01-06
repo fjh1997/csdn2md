@@ -197,7 +197,7 @@ def to_md_files(username, total_pages, cookie_file, start=1, stop=None, hexo=Tru
             # hexo_str 是用 hexo 写文章时需要在头部加的东西
             hexo_str = ''
             if hexo:
-                hexo_str = '---\ntitle: {title}\ndate: {date}\ntags:\n---\n\n'.format(
+                hexo_str = '---\ntitle: "{title}"\ndate: {date}\ntags:\n---\n\n'.format(
                     title=title, date=create)
             # Windows 下文件名中的非法字符
             forbidden = ['\\', '/', ':', '*', '?', '"', '<', '>', '|']
